@@ -1,22 +1,134 @@
 {
-  "generatedAt": "2026-07-07T05:52:34.950Z",
+  "generatedAt": "2026-07-07T11:20:47.595Z",
   "source": "https://www.dreamworkhq.com",
   "list": "Tech-Internships-2026",
   "count": 100,
   "listings": [
     {
-      "id": "a9622fc2-7c37-4818-8859-8531e495c82f",
-      "title": "Biomedical Engineering Intern",
-      "company": "Trimedx",
-      "companyDomain": "trimedx.com",
-      "location": "Stamford, CT",
+      "id": "99b81295-73e3-4911-9af8-cf61280b7d67",
+      "title": "Special Projects Intern [Fall 2026]",
+      "company": "Figure AI",
+      "companyDomain": "figure.ai",
+      "location": "San Jose, CA",
       "remoteType": "onsite",
-      "salaryMin": 40000,
-      "salaryMax": 50000,
+      "salaryMin": 83200,
+      "salaryMax": 93600,
+      "aiRoleKind": "ai_explicit",
+      "postedAt": "2026-07-06T22:38:21.000Z",
+      "firstIndexedAt": "2026-07-07T06:14:32.086Z",
+      "url": "https://www.dreamworkhq.com/job/99b81295-73e3-4911-9af8-cf61280b7d67?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "e6f563b4-bfc1-4d87-8def-7775bb21e597",
+      "title": "Pipeline RR: Software Quality Assurance Coop",
+      "company": "Fa Evmr Saasfaprod1",
+      "companyDomain": "nokia.com",
+      "location": "United States",
+      "remoteType": "onsite",
+      "salaryMin": 42016,
+      "salaryMax": 98176,
       "aiRoleKind": "non_ai",
-      "postedAt": "2026-07-02T08:32:33.867Z",
-      "firstIndexedAt": "2026-07-06T08:32:38.696Z",
-      "url": "https://www.dreamworkhq.com/job/a9622fc2-7c37-4818-8859-8531e495c82f?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+      "postedAt": "2026-07-06T19:51:21.000Z",
+      "firstIndexedAt": "2026-07-07T06:14:15.981Z",
+      "url": "https://www.dreamworkhq.com/job/e6f563b4-bfc1-4d87-8def-7775bb21e597?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "42fc264c-6969-470e-8836-e10d77ac9e80",
+      "title": "Manufacturing Engineering Intern",
+      "company": "Lightship",
+      "companyDomain": "lightshiprv.com",
+      "location": "Broomfield, CO",
+      "remoteType": "onsite",
+      "salaryMin": 58240,
+      "salaryMax": 62400,
+      "aiRoleKind": "non_ai",
+      "postedAt": "2026-07-07T04:03:00.244Z",
+      "firstIndexedAt": "2026-07-07T06:13:55.889Z",
+      "url": "https://www.dreamworkhq.com/job/42fc264c-6969-470e-8836-e10d77ac9e80?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "bfb8c895-6114-4734-bb7c-d518abf82e06",
+      "title": "Data Analyst Intern - Summer 2027",
+      "company": "Capital One",
+      "companyDomain": "capitalone.com",
+      "location": "McLean, VA",
+      "remoteType": "hybrid",
+      "salaryMin": 109000,
+      "salaryMax": 109000,
+      "aiRoleKind": "non_ai",
+      "postedAt": "2026-07-07T06:08:15.083Z",
+      "firstIndexedAt": "2026-07-07T06:08:44.901Z",
+      "url": "https://www.dreamworkhq.com/job/bfb8c895-6114-4734-bb7c-d518abf82e06?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "38edd0e1-b74e-4208-b59a-c57695d4fd26",
+      "title": "Product Development Internship Program - Summer 2027",
+      "company": "Capital One",
+      "companyDomain": "capitalone.com",
+      "location": "McLean, VA",
+      "remoteType": "hybrid",
+      "salaryMin": 109000,
+      "salaryMax": 109000,
+      "aiRoleKind": "non_ai",
+      "postedAt": "2026-07-07T06:08:14.774Z",
+      "firstIndexedAt": "2026-07-07T06:08:44.420Z",
+      "url": "https://www.dreamworkhq.com/job/38edd0e1-b74e-4208-b59a-c57695d4fd26?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "64831aee-21e9-4bd6-838a-398d286613cd",
+      "title": "Engineering Intern",
+      "company": "Helenoftroy",
+      "companyDomain": "helenoftroy.com",
+      "location": "USA - Marlborough, Massachusetts",
+      "remoteType": "hybrid",
+      "salaryMin": 27040,
+      "salaryMax": 31200,
+      "aiRoleKind": "non_ai",
+      "postedAt": "2026-07-07T06:08:05.743Z",
+      "firstIndexedAt": "2026-07-07T06:08:07.340Z",
+      "url": "https://www.dreamworkhq.com/job/64831aee-21e9-4bd6-838a-398d286613cd?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "b76bffdd-72cb-48d4-923d-43452fd84879",
+      "title": "Intern, Business Support (Engineering Summer Intern)",
+      "company": "Gd Ots",
+      "companyDomain": "gd-ots.com",
+      "location": "Anniston, AL, US",
+      "remoteType": "onsite",
+      "salaryMin": 30000,
+      "salaryMax": 40000,
+      "aiRoleKind": "non_ai",
+      "postedAt": "2024-07-07T06:06:56.621Z",
+      "firstIndexedAt": "2026-07-07T06:07:08.414Z",
+      "url": "https://www.dreamworkhq.com/job/b76bffdd-72cb-48d4-923d-43452fd84879?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "e3a6954c-95d5-487f-bc53-894845cbdc28",
+      "title": "Software Engineering Intern",
+      "company": "Charlesriveranalytics90",
+      "companyDomain": "cra.tech",
+      "location": "Cambridge, MA",
+      "remoteType": "onsite",
+      "salaryMin": 41600,
+      "salaryMax": 62400,
+      "aiRoleKind": "ai_first",
+      "postedAt": "2026-07-07T02:16:47.000Z",
+      "firstIndexedAt": "2026-07-07T06:06:01.934Z",
+      "url": "https://www.dreamworkhq.com/job/e3a6954c-95d5-487f-bc53-894845cbdc28?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "87c9f9db-ce6d-42f1-a261-2e4ec695cc0a",
+      "title": "Performance Engineer Intern, Systems Software-  Fall 2026",
+      "company": "Nvidia",
+      "companyDomain": "nvidia.com",
+      "location": "US, MO, St. Louis",
+      "remoteType": "onsite",
+      "salaryMin": 41600,
+      "salaryMax": 147680,
+      "aiRoleKind": "ai_explicit",
+      "postedAt": "2026-07-07T06:03:13.193Z",
+      "firstIndexedAt": "2026-07-07T06:03:14.994Z",
+      "url": "https://www.dreamworkhq.com/job/87c9f9db-ce6d-42f1-a261-2e4ec695cc0a?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "3efaa538-d8de-49e7-abb1-fcb0583ba364",
@@ -75,18 +187,18 @@
       "url": "https://www.dreamworkhq.com/job/382fd6e6-0cea-4342-844d-2f55fded8f23?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
-      "id": "736fdb17-3e0a-47aa-a19a-be859ec6e02e",
-      "title": "Quality Engineering Intern",
+      "id": "24c6d6cc-ea2b-46a4-b7eb-f8e6e8703fa6",
+      "title": "Engineering Intern",
       "company": "Hexcel",
       "companyDomain": "hexcel.com",
-      "location": "USA - WA - Kent",
+      "location": "USA - UT - Salt Lake City Fibers",
       "remoteType": "onsite",
-      "salaryMin": 43680,
-      "salaryMax": 49920,
+      "salaryMin": null,
+      "salaryMax": null,
       "aiRoleKind": "non_ai",
-      "postedAt": "2026-06-12T06:13:54.688Z",
+      "postedAt": null,
       "firstIndexedAt": "2026-07-05T06:14:07.984Z",
-      "url": "https://www.dreamworkhq.com/job/736fdb17-3e0a-47aa-a19a-be859ec6e02e?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+      "url": "https://www.dreamworkhq.com/job/24c6d6cc-ea2b-46a4-b7eb-f8e6e8703fa6?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "9cdce3a7-4c5e-410d-992f-da64b5d50752",
@@ -105,7 +217,7 @@
     {
       "id": "b456eae4-e00b-4a41-8670-0b771f802c3a",
       "title": "Software Development Intern - GenAI",
-      "company": "Fortinet",
+      "company": "Candidate Experience Site",
       "companyDomain": "fortinet.com",
       "location": "Santa Clara, CA, United States",
       "remoteType": "onsite",
@@ -173,8 +285,8 @@
       "url": "https://www.dreamworkhq.com/job/3904f0f5-501d-410e-8ba8-65d752bcd102?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
-      "id": "4efe62ae-ba5a-471b-bdcc-07e9461bc7b7",
-      "title": "Controls Engineering Co-Op",
+      "id": "48a0d804-e05d-4253-b6d9-3b277da36976",
+      "title": "Hydraulic Engineer Co-Op",
       "company": "Colpipe",
       "companyDomain": "colonialpipeline.com",
       "location": "Alpharetta, GA",
@@ -184,7 +296,7 @@
       "aiRoleKind": "non_ai",
       "postedAt": null,
       "firstIndexedAt": "2026-07-03T06:08:17.391Z",
-      "url": "https://www.dreamworkhq.com/job/4efe62ae-ba5a-471b-bdcc-07e9461bc7b7?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+      "url": "https://www.dreamworkhq.com/job/48a0d804-e05d-4253-b6d9-3b277da36976?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "0f2d9e11-a8e7-463b-b353-65448a4a2a91",
@@ -201,8 +313,8 @@
       "url": "https://www.dreamworkhq.com/job/0f2d9e11-a8e7-463b-b353-65448a4a2a91?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
-      "id": "48a0d804-e05d-4253-b6d9-3b277da36976",
-      "title": "Hydraulic Engineer Co-Op",
+      "id": "4efe62ae-ba5a-471b-bdcc-07e9461bc7b7",
+      "title": "Controls Engineering Co-Op",
       "company": "Colpipe",
       "companyDomain": "colonialpipeline.com",
       "location": "Alpharetta, GA",
@@ -212,7 +324,7 @@
       "aiRoleKind": "non_ai",
       "postedAt": null,
       "firstIndexedAt": "2026-07-03T06:08:17.391Z",
-      "url": "https://www.dreamworkhq.com/job/48a0d804-e05d-4253-b6d9-3b277da36976?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+      "url": "https://www.dreamworkhq.com/job/4efe62ae-ba5a-471b-bdcc-07e9461bc7b7?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "eee9f064-14cc-42a6-8307-280b3cf64cbe",
@@ -252,7 +364,7 @@
       "salaryMin": 48402,
       "salaryMax": 48402,
       "aiRoleKind": "non_ai",
-      "postedAt": "2026-07-02T06:03:59.247Z",
+      "postedAt": "2026-07-02T06:01:15.451Z",
       "firstIndexedAt": "2026-07-03T06:08:05.234Z",
       "url": "https://www.dreamworkhq.com/job/6b75e830-e648-4350-8089-e281846501ff?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
@@ -297,20 +409,6 @@
       "postedAt": "2026-07-02T18:02:02.000Z",
       "firstIndexedAt": "2026-07-03T06:05:11.867Z",
       "url": "https://www.dreamworkhq.com/job/409a4e0f-c7df-4edb-a4dd-e928e3f9aa54?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "ab2ef415-bd71-4c93-8e67-7b5a7626d750",
-      "title": "Business Intelligence Intern - Fall",
-      "company": "Bosch",
-      "companyDomain": "bosch.com",
-      "location": "Watertown, MA, United States",
-      "remoteType": "onsite",
-      "salaryMin": 50000,
-      "salaryMax": 65000,
-      "aiRoleKind": "ai_explicit",
-      "postedAt": "2026-07-02T13:08:23.608Z",
-      "firstIndexedAt": "2026-07-03T06:04:15.736Z",
-      "url": "https://www.dreamworkhq.com/job/ab2ef415-bd71-4c93-8e67-7b5a7626d750?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "b555ea7c-e082-4b6d-bf42-a5f6690ae18f",
@@ -378,7 +476,7 @@
       "salaryMin": 40000,
       "salaryMax": 50000,
       "aiRoleKind": "non_ai",
-      "postedAt": "2026-06-17T06:04:25.628Z",
+      "postedAt": "2026-06-17T06:02:39.801Z",
       "firstIndexedAt": "2026-07-02T06:16:24.594Z",
       "url": "https://www.dreamworkhq.com/job/efacb6c6-416a-4305-9f04-5c3acd85502a?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
@@ -392,7 +490,7 @@
       "salaryMin": 40000,
       "salaryMax": 55000,
       "aiRoleKind": "ai_explicit",
-      "postedAt": "2026-06-18T06:04:25.492Z",
+      "postedAt": "2026-06-18T06:02:39.713Z",
       "firstIndexedAt": "2026-07-02T06:16:24.594Z",
       "url": "https://www.dreamworkhq.com/job/7fdfbe8c-6144-4be3-8bf8-2082dc8a81b4?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
@@ -453,20 +551,6 @@
       "url": "https://www.dreamworkhq.com/job/372d85ea-218e-465e-9923-012ddfadf76d?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
-      "id": "ca5141fa-f9ce-4937-8c64-06727a6cb5ea",
-      "title": "Robotics - Hardware Development Engineer Intern/Co-op - 2026 (Robotics, Mechanical, Electrical, Hardware Test, Reliability, Failure Analysis, Operations, and more)",
-      "company": "Amazon",
-      "companyDomain": "amazon.com",
-      "location": "US, MA, Westboro",
-      "remoteType": "onsite",
-      "salaryMin": 96600,
-      "salaryMax": 160000,
-      "aiRoleKind": "non_ai",
-      "postedAt": "2025-12-17T00:00:00.000Z",
-      "firstIndexedAt": "2026-07-02T06:04:09.793Z",
-      "url": "https://www.dreamworkhq.com/job/ca5141fa-f9ce-4937-8c64-06727a6cb5ea?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
       "id": "e79673a4-1adb-46ac-8645-d30755eede71",
       "title": "Robotics - Hardware Development Engineer Co-op - 2026 (Robotics, Mechanical, Electrical, Hardware Test, Reliability, Failure Analysis, Operations, and more)",
       "company": "Amazon",
@@ -479,6 +563,20 @@
       "postedAt": "2026-04-16T00:00:00.000Z",
       "firstIndexedAt": "2026-07-02T06:04:09.793Z",
       "url": "https://www.dreamworkhq.com/job/e79673a4-1adb-46ac-8645-d30755eede71?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "ca5141fa-f9ce-4937-8c64-06727a6cb5ea",
+      "title": "Robotics - Hardware Development Engineer Intern/Co-op - 2026 (Robotics, Mechanical, Electrical, Hardware Test, Reliability, Failure Analysis, Operations, and more)",
+      "company": "Amazon",
+      "companyDomain": "amazon.com",
+      "location": "US, MA, Westboro",
+      "remoteType": "onsite",
+      "salaryMin": 96600,
+      "salaryMax": 160000,
+      "aiRoleKind": "non_ai",
+      "postedAt": "2025-12-17T00:00:00.000Z",
+      "firstIndexedAt": "2026-07-02T06:04:09.793Z",
+      "url": "https://www.dreamworkhq.com/job/ca5141fa-f9ce-4937-8c64-06727a6cb5ea?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "8060db90-ecd4-4c2a-83e9-072b18e0f7a6",
@@ -509,20 +607,6 @@
       "url": "https://www.dreamworkhq.com/job/9eaccecc-1722-42d0-a986-86d1bee07d5a?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
-      "id": "11952ed0-ec10-448d-964e-2768e4846e41",
-      "title": "Quality Engineering Co-op (Fall Term - 12 Month Contract))",
-      "company": "Magna",
-      "companyDomain": "magna.com",
-      "location": "Newmarket, Ontario, CA",
-      "remoteType": "onsite",
-      "salaryMin": 40456,
-      "salaryMax": 51771,
-      "aiRoleKind": "non_ai",
-      "postedAt": "2026-07-01T06:04:00.612Z",
-      "firstIndexedAt": "2026-07-02T06:03:37.564Z",
-      "url": "https://www.dreamworkhq.com/job/11952ed0-ec10-448d-964e-2768e4846e41?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
       "id": "43666079-bf99-4278-96d2-10eb3671bd20",
       "title": "Manufacturing Engineering Co-op - Fall Term (12 Month Contract)",
       "company": "Magna",
@@ -532,7 +616,7 @@
       "salaryMin": 30000,
       "salaryMax": 38000,
       "aiRoleKind": "non_ai",
-      "postedAt": "2026-07-01T06:04:00.693Z",
+      "postedAt": "2026-07-01T06:01:17.136Z",
       "firstIndexedAt": "2026-07-02T06:03:37.564Z",
       "url": "https://www.dreamworkhq.com/job/43666079-bf99-4278-96d2-10eb3671bd20?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
@@ -591,6 +675,20 @@
       "postedAt": "2026-07-01T17:10:23.000Z",
       "firstIndexedAt": "2026-07-02T06:01:11.869Z",
       "url": "https://www.dreamworkhq.com/job/989316de-f27b-48de-8e63-d49c685fde9d?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "86255e02-3d5f-4487-801b-3e07516ed164",
+      "title": "Optical Engineering Co-Op - (August - December 2026)",
+      "company": "General Dynamics Mission Systems",
+      "companyDomain": "gdmissionsystems.com",
+      "location": "McLeansville, NC, US",
+      "remoteType": "onsite",
+      "salaryMin": 54080,
+      "salaryMax": 60320,
+      "aiRoleKind": "non_ai",
+      "postedAt": "2026-07-06T04:00:00.000Z",
+      "firstIndexedAt": "2026-07-02T00:10:34.272Z",
+      "url": "https://www.dreamworkhq.com/job/86255e02-3d5f-4487-801b-3e07516ed164?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "fc6a5075-6949-4e34-a71d-ad48e4e573e2",
@@ -658,7 +756,7 @@
       "salaryMin": 36400,
       "salaryMax": 36400,
       "aiRoleKind": "non_ai",
-      "postedAt": "2026-06-24T06:02:45.389Z",
+      "postedAt": "2026-06-24T06:07:23.761Z",
       "firstIndexedAt": "2026-07-02T00:10:17.355Z",
       "url": "https://www.dreamworkhq.com/job/0369bf2a-8889-4d9d-ac37-84adf0df2e6c?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
@@ -714,21 +812,21 @@
       "salaryMin": 43680,
       "salaryMax": 52000,
       "aiRoleKind": "ai_first",
-      "postedAt": "2026-07-02T06:00:11.852Z",
+      "postedAt": "2026-07-02T06:03:55.022Z",
       "firstIndexedAt": "2026-07-02T00:10:07.192Z",
       "url": "https://www.dreamworkhq.com/job/6be35633-209e-44a1-96c8-688a1c9c28bd?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "becef25b-520f-4e8d-8f99-abf473f78b56",
       "title": "Design Intern - Right of Way Division",
-      "company": "Nebraska State Careers",
+      "company": "Nebraskastatecareers",
       "companyDomain": "nebraskastatecareers.com",
       "location": "Lincoln, NE",
       "remoteType": "onsite",
       "salaryMin": 38723,
       "salaryMax": 38723,
       "aiRoleKind": "non_ai",
-      "postedAt": "2026-06-19T06:08:53.120Z",
+      "postedAt": "2026-06-19T06:02:52.486Z",
       "firstIndexedAt": "2026-07-02T00:10:03.078Z",
       "url": "https://www.dreamworkhq.com/job/becef25b-520f-4e8d-8f99-abf473f78b56?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
@@ -742,9 +840,37 @@
       "salaryMin": 39595,
       "salaryMax": 39595,
       "aiRoleKind": "non_ai",
-      "postedAt": "2026-06-24T06:08:50.578Z",
+      "postedAt": "2026-06-24T06:10:05.235Z",
       "firstIndexedAt": "2026-07-02T00:10:01.709Z",
       "url": "https://www.dreamworkhq.com/job/402086ae-8636-462d-8dcf-bd3cf06bddca?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "254feeb7-b19a-4c60-ad4c-9c0c98c4ab76",
+      "title": "AI Intern",
+      "company": "Swbccareers",
+      "companyDomain": "swbccareers.com",
+      "location": "San Antonio, TX",
+      "remoteType": "onsite",
+      "salaryMin": 40000,
+      "salaryMax": 55000,
+      "aiRoleKind": "ai_first",
+      "postedAt": null,
+      "firstIndexedAt": "2026-07-02T00:09:47.812Z",
+      "url": "https://www.dreamworkhq.com/job/254feeb7-b19a-4c60-ad4c-9c0c98c4ab76?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "65a08e1e-5d9a-430e-a689-c5be1b0b0a76",
+      "title": "IT Intern (Network Security)",
+      "company": "Swbccareers",
+      "companyDomain": "swbccareers.com",
+      "location": "San Antonio, TX",
+      "remoteType": "onsite",
+      "salaryMin": 40000,
+      "salaryMax": 55000,
+      "aiRoleKind": "non_ai",
+      "postedAt": null,
+      "firstIndexedAt": "2026-07-02T00:09:47.812Z",
+      "url": "https://www.dreamworkhq.com/job/65a08e1e-5d9a-430e-a689-c5be1b0b0a76?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "94c5a940-d82f-490b-86b6-74fbf2067a08",
@@ -915,6 +1041,20 @@
       "url": "https://www.dreamworkhq.com/job/c4d2b2f2-8103-4553-bd81-43cf3cdc7ebc?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
+      "id": "dc815aa0-23c8-4b50-ab7d-ddc72a0d977d",
+      "title": "Distribution Design Engineering Intern",
+      "company": "Xcelenergy",
+      "companyDomain": "xcelenergy.com",
+      "location": "Amarillo, TX, 79109",
+      "remoteType": null,
+      "salaryMin": 40144,
+      "salaryMax": 44096,
+      "aiRoleKind": null,
+      "postedAt": "2026-07-01T06:14:03.856Z",
+      "firstIndexedAt": "2026-07-01T06:18:17.294Z",
+      "url": "https://www.dreamworkhq.com/job/dc815aa0-23c8-4b50-ab7d-ddc72a0d977d?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
       "id": "6766cb6a-8121-4669-a3a8-4d8ccb3d365c",
       "title": "Enterprise Security, Risk and Compliance Co-Op/Internship ",
       "company": "Locusrobotics",
@@ -929,6 +1069,20 @@
       "url": "https://www.dreamworkhq.com/job/6766cb6a-8121-4669-a3a8-4d8ccb3d365c?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
+      "id": "657ef6d5-3d02-4b66-a558-fdb9bef9e3b5",
+      "title": "Project Engineering Co-op",
+      "company": "Magna",
+      "companyDomain": "magna.com",
+      "location": "Newmarket, Ontario, CA",
+      "remoteType": null,
+      "salaryMin": 32000,
+      "salaryMax": 39000,
+      "aiRoleKind": null,
+      "postedAt": "2026-07-01T06:01:17.215Z",
+      "firstIndexedAt": "2026-07-01T06:08:22.736Z",
+      "url": "https://www.dreamworkhq.com/job/657ef6d5-3d02-4b66-a558-fdb9bef9e3b5?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
       "id": "b8b088f4-ddee-4521-907b-d205c5f55557",
       "title": "Intern - Systems Engineering",
       "company": "Magna",
@@ -938,7 +1092,7 @@
       "salaryMin": null,
       "salaryMax": null,
       "aiRoleKind": null,
-      "postedAt": "2026-07-01T06:04:00.448Z",
+      "postedAt": "2026-07-01T06:01:16.812Z",
       "firstIndexedAt": "2026-07-01T06:08:22.736Z",
       "url": "https://www.dreamworkhq.com/job/b8b088f4-ddee-4521-907b-d205c5f55557?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
@@ -985,18 +1139,18 @@
       "url": "https://www.dreamworkhq.com/job/2cea799e-e651-4668-afca-c287b5ad6ff5?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
-      "id": "a7785290-a67e-46d0-8e77-f46548b55095",
-      "title": "Intern- Manufacturing Test Engineering",
-      "company": "Generac",
-      "companyDomain": "generac.com",
-      "location": "Reno, NV - USA",
+      "id": "3f0cf5b5-3a8d-47c5-a11c-84127ad10ab8",
+      "title": "Structural Engineering Intern - Transportation (Fall 2026)",
+      "company": "Stantec",
+      "companyDomain": "dn9tckvz2rpxv.cloudfront.net",
+      "location": "New Haven, CT, United States",
       "remoteType": "onsite",
-      "salaryMin": 45000,
-      "salaryMax": 65000,
+      "salaryMin": 48818,
+      "salaryMax": 71760,
       "aiRoleKind": "non_ai",
-      "postedAt": "2026-07-01T06:02:25.655Z",
-      "firstIndexedAt": "2026-07-01T06:00:52.672Z",
-      "url": "https://www.dreamworkhq.com/job/a7785290-a67e-46d0-8e77-f46548b55095?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+      "postedAt": "2026-06-22T15:15:45.000Z",
+      "firstIndexedAt": "2026-06-30T08:31:42.999Z",
+      "url": "https://www.dreamworkhq.com/job/3f0cf5b5-3a8d-47c5-a11c-84127ad10ab8?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "c1048fe7-f884-4f77-85a8-40f8d3f9b177",
@@ -1011,20 +1165,6 @@
       "postedAt": "2026-06-18T19:43:03.000Z",
       "firstIndexedAt": "2026-06-30T08:31:42.999Z",
       "url": "https://www.dreamworkhq.com/job/c1048fe7-f884-4f77-85a8-40f8d3f9b177?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "3f0cf5b5-3a8d-47c5-a11c-84127ad10ab8",
-      "title": "Structural Engineering Intern - Transportation (Fall 2026)",
-      "company": "Stantec",
-      "companyDomain": "dn9tckvz2rpxv.cloudfront.net",
-      "location": "New Haven, CT, United States",
-      "remoteType": "onsite",
-      "salaryMin": 48818,
-      "salaryMax": 71760,
-      "aiRoleKind": "non_ai",
-      "postedAt": "2026-06-22T15:15:45.000Z",
-      "firstIndexedAt": "2026-06-30T08:31:42.999Z",
-      "url": "https://www.dreamworkhq.com/job/3f0cf5b5-3a8d-47c5-a11c-84127ad10ab8?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "8f39d221-3cf0-48ec-aab2-40e585fc77f7",
@@ -1083,18 +1223,46 @@
       "url": "https://www.dreamworkhq.com/job/f46a15d2-4d58-4a12-ab68-8c25a7ba3886?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
-      "id": "16edcd85-81a0-4790-b133-2af09f3577e8",
-      "title": "Software Engineer, Internship - Production Infrastructure",
+      "id": "907a24b4-5777-4188-b717-24eec49864a4",
+      "title": "Software Engineer, Internship",
       "company": "Palantir",
       "companyDomain": "palantir.com",
-      "location": "Seattle, WA",
+      "location": "Palo Alto, CA",
       "remoteType": null,
       "salaryMin": 126000,
       "salaryMax": 126000,
       "aiRoleKind": null,
-      "postedAt": "2025-06-26T20:05:13.023Z",
+      "postedAt": "2021-07-01T21:52:15.503Z",
       "firstIndexedAt": "2026-06-30T06:24:20.763Z",
-      "url": "https://www.dreamworkhq.com/job/16edcd85-81a0-4790-b133-2af09f3577e8?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+      "url": "https://www.dreamworkhq.com/job/907a24b4-5777-4188-b717-24eec49864a4?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "28b68a0b-8470-4cfd-a8dd-0e8683c3a3e1",
+      "title": "Software Engineer, Internship",
+      "company": "Palantir",
+      "companyDomain": "palantir.com",
+      "location": "Denver, CO",
+      "remoteType": null,
+      "salaryMin": 126000,
+      "salaryMax": 126000,
+      "aiRoleKind": null,
+      "postedAt": "2024-08-29T04:34:48.941Z",
+      "firstIndexedAt": "2026-06-30T06:24:20.763Z",
+      "url": "https://www.dreamworkhq.com/job/28b68a0b-8470-4cfd-a8dd-0e8683c3a3e1?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "dc106703-9972-4545-8d37-38f1db45aab0",
+      "title": "Software Engineer, Internship - Infrastructure",
+      "company": "Palantir",
+      "companyDomain": "palantir.com",
+      "location": "New York, NY",
+      "remoteType": null,
+      "salaryMin": 126000,
+      "salaryMax": 126000,
+      "aiRoleKind": null,
+      "postedAt": "2025-06-26T15:01:02.839Z",
+      "firstIndexedAt": "2026-06-30T06:24:20.763Z",
+      "url": "https://www.dreamworkhq.com/job/dc106703-9972-4545-8d37-38f1db45aab0?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "4b23b4bb-59a3-4d82-86bc-b05140369fb7",
@@ -1109,6 +1277,20 @@
       "postedAt": "2025-08-19T09:48:43.334Z",
       "firstIndexedAt": "2026-06-30T06:24:20.763Z",
       "url": "https://www.dreamworkhq.com/job/4b23b4bb-59a3-4d82-86bc-b05140369fb7?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "16edcd85-81a0-4790-b133-2af09f3577e8",
+      "title": "Software Engineer, Internship - Production Infrastructure",
+      "company": "Palantir",
+      "companyDomain": "palantir.com",
+      "location": "Seattle, WA",
+      "remoteType": null,
+      "salaryMin": 126000,
+      "salaryMax": 126000,
+      "aiRoleKind": null,
+      "postedAt": "2025-06-26T20:05:13.023Z",
+      "firstIndexedAt": "2026-06-30T06:24:20.763Z",
+      "url": "https://www.dreamworkhq.com/job/16edcd85-81a0-4790-b133-2af09f3577e8?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "2ecfe130-b575-4dec-8fec-daa9f663a763",
@@ -1139,20 +1321,6 @@
       "url": "https://www.dreamworkhq.com/job/d9645ba3-3a15-4104-bc29-de5e4ec0ba32?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
-      "id": "907a24b4-5777-4188-b717-24eec49864a4",
-      "title": "Software Engineer, Internship",
-      "company": "Palantir",
-      "companyDomain": "palantir.com",
-      "location": "Palo Alto, CA",
-      "remoteType": null,
-      "salaryMin": 126000,
-      "salaryMax": 126000,
-      "aiRoleKind": null,
-      "postedAt": "2021-07-01T21:52:15.503Z",
-      "firstIndexedAt": "2026-06-30T06:24:20.763Z",
-      "url": "https://www.dreamworkhq.com/job/907a24b4-5777-4188-b717-24eec49864a4?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
       "id": "1a74591e-21b2-469e-92de-6d6b90893bd0",
       "title": "Software Engineer, Internship",
       "company": "Palantir",
@@ -1165,48 +1333,6 @@
       "postedAt": "2022-06-30T21:19:00.945Z",
       "firstIndexedAt": "2026-06-30T06:24:20.763Z",
       "url": "https://www.dreamworkhq.com/job/1a74591e-21b2-469e-92de-6d6b90893bd0?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "dc106703-9972-4545-8d37-38f1db45aab0",
-      "title": "Software Engineer, Internship - Infrastructure",
-      "company": "Palantir",
-      "companyDomain": "palantir.com",
-      "location": "New York, NY",
-      "remoteType": null,
-      "salaryMin": 126000,
-      "salaryMax": 126000,
-      "aiRoleKind": null,
-      "postedAt": "2025-06-26T15:01:02.839Z",
-      "firstIndexedAt": "2026-06-30T06:24:20.763Z",
-      "url": "https://www.dreamworkhq.com/job/dc106703-9972-4545-8d37-38f1db45aab0?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "c09e7bb1-3535-4465-a75a-8ca6ed33fc55",
-      "title": "Software Engineer, Internship - Defense Tech",
-      "company": "Palantir",
-      "companyDomain": "palantir.com",
-      "location": "New York, NY",
-      "remoteType": null,
-      "salaryMin": 126000,
-      "salaryMax": 126000,
-      "aiRoleKind": null,
-      "postedAt": "2024-08-05T23:27:08.111Z",
-      "firstIndexedAt": "2026-06-30T06:24:20.763Z",
-      "url": "https://www.dreamworkhq.com/job/c09e7bb1-3535-4465-a75a-8ca6ed33fc55?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "28b68a0b-8470-4cfd-a8dd-0e8683c3a3e1",
-      "title": "Software Engineer, Internship",
-      "company": "Palantir",
-      "companyDomain": "palantir.com",
-      "location": "Denver, CO",
-      "remoteType": null,
-      "salaryMin": 126000,
-      "salaryMax": 126000,
-      "aiRoleKind": null,
-      "postedAt": "2024-08-29T04:34:48.941Z",
-      "firstIndexedAt": "2026-06-30T06:24:20.763Z",
-      "url": "https://www.dreamworkhq.com/job/28b68a0b-8470-4cfd-a8dd-0e8683c3a3e1?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "559bc4da-baa9-4077-8f08-56b26251219e",
@@ -1246,7 +1372,7 @@
       "salaryMin": 41600,
       "salaryMax": 147680,
       "aiRoleKind": null,
-      "postedAt": "2026-06-30T06:07:21.825Z",
+      "postedAt": "2026-06-30T06:09:48.876Z",
       "firstIndexedAt": "2026-06-30T06:04:34.551Z",
       "url": "https://www.dreamworkhq.com/job/023776b2-46f8-446a-b346-95550e512dd3?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
@@ -1277,132 +1403,6 @@
       "postedAt": "2026-06-29T15:23:09.924Z",
       "firstIndexedAt": "2026-06-30T06:03:49.934Z",
       "url": "https://www.dreamworkhq.com/job/5d5f662f-2133-491b-9748-db7c40fb3b12?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "6abcc8bd-03ef-47d8-a8c6-c943e48113fd",
-      "title": "Engineering Co-Op",
-      "company": "Standard Aero",
-      "companyDomain": "standardaerocareers.com",
-      "location": "Cincinnati, OH, United States",
-      "remoteType": "onsite",
-      "salaryMin": 35000,
-      "salaryMax": 45000,
-      "aiRoleKind": "non_ai",
-      "postedAt": "2026-06-17T18:13:37.000Z",
-      "firstIndexedAt": "2026-06-29T20:31:34.457Z",
-      "url": "https://www.dreamworkhq.com/job/6abcc8bd-03ef-47d8-a8c6-c943e48113fd?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "3a09af06-c7d0-455b-a637-2764d29cc0f1",
-      "title": "Nuclear Engineer I I&C - Internship",
-      "company": "Zachry Group",
-      "companyDomain": "zachrygroup.com",
-      "location": "Charlotte, NC, United States",
-      "remoteType": "onsite",
-      "salaryMin": 40000,
-      "salaryMax": 50000,
-      "aiRoleKind": "non_ai",
-      "postedAt": "2026-02-19T17:29:07.000Z",
-      "firstIndexedAt": "2026-06-29T02:32:13.092Z",
-      "url": "https://www.dreamworkhq.com/job/3a09af06-c7d0-455b-a637-2764d29cc0f1?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "855fd5df-2d55-47c3-97e2-6c8fad1d0653",
-      "title": "Nuclear Engineer I Mechanical - Internship",
-      "company": "Zachry Group",
-      "companyDomain": "zachrygroup.com",
-      "location": "Charlotte, NC, United States",
-      "remoteType": "onsite",
-      "salaryMin": 40000,
-      "salaryMax": 50000,
-      "aiRoleKind": "non_ai",
-      "postedAt": "2026-02-19T06:43:41.000Z",
-      "firstIndexedAt": "2026-06-29T02:32:13.092Z",
-      "url": "https://www.dreamworkhq.com/job/855fd5df-2d55-47c3-97e2-6c8fad1d0653?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "8a9c4737-9857-49be-92ec-1fd83ebc954b",
-      "title": "Flight Software (C++) Internship - Summer 2026",
-      "company": "Varda Space",
-      "companyDomain": "varda.com",
-      "location": "El Segundo, California, United States",
-      "remoteType": "onsite",
-      "salaryMin": 60000,
-      "salaryMax": 80000,
-      "aiRoleKind": "non_ai",
-      "postedAt": "2025-09-05T15:27:50.000Z",
-      "firstIndexedAt": "2026-06-27T06:28:32.205Z",
-      "url": "https://www.dreamworkhq.com/job/8a9c4737-9857-49be-92ec-1fd83ebc954b?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "6a619a05-24a0-4c20-b8ea-672f0b069173",
-      "title": "Hardware Prototyping Intern – Data Center Rack",
-      "company": "Bosch",
-      "companyDomain": "bosch.com",
-      "location": "Sunnyvale, CA, United States",
-      "remoteType": null,
-      "salaryMin": 79040,
-      "salaryMax": 114400,
-      "aiRoleKind": null,
-      "postedAt": "2026-06-26T19:46:29.144Z",
-      "firstIndexedAt": "2026-06-27T06:15:06.166Z",
-      "url": "https://www.dreamworkhq.com/job/6a619a05-24a0-4c20-b8ea-672f0b069173?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "8f7dfd90-977e-4ddc-b652-44577cf68aa0",
-      "title": "Co-Op, Next Gen Engineering",
-      "company": "Lilasciences",
-      "companyDomain": "lila.ai",
-      "location": "Cambridge, MA USA",
-      "remoteType": "onsite",
-      "salaryMin": null,
-      "salaryMax": null,
-      "aiRoleKind": "ai_explicit",
-      "postedAt": "2026-06-25T19:29:05.000Z",
-      "firstIndexedAt": "2026-06-26T06:31:19.658Z",
-      "url": "https://www.dreamworkhq.com/job/8f7dfd90-977e-4ddc-b652-44577cf68aa0?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "c7a5ff65-8077-405e-a2d9-a13e5e9eb67b",
-      "title": "Manufacturing Engineering Intern (Summer / Fall) ",
-      "company": "Heartaerospace",
-      "companyDomain": "heartaerospace.com",
-      "location": "Los Angeles, CA",
-      "remoteType": "hybrid",
-      "salaryMin": 62400,
-      "salaryMax": 72800,
-      "aiRoleKind": "non_ai",
-      "postedAt": "2026-06-25T17:20:36.000Z",
-      "firstIndexedAt": "2026-06-26T06:19:27.185Z",
-      "url": "https://www.dreamworkhq.com/job/c7a5ff65-8077-405e-a2d9-a13e5e9eb67b?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "2689af66-5663-4ba4-96f8-a7f36e290b23",
-      "title": "AI/ML Intern - Radiation Oncology",
-      "company": "Mayo US",
-      "companyDomain": "design.mayoclinic.org",
-      "location": "Rochester, MN, United States",
-      "remoteType": null,
-      "salaryMin": 52000,
-      "salaryMax": 52000,
-      "aiRoleKind": null,
-      "postedAt": "2026-06-25T18:04:04.000Z",
-      "firstIndexedAt": "2026-06-26T06:17:24.249Z",
-      "url": "https://www.dreamworkhq.com/job/2689af66-5663-4ba4-96f8-a7f36e290b23?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "f74fc181-9b16-48c0-bd52-3f6957c1a209",
-      "title": "2026 Fall Internship - Supplier Quality Engineering Intern",
-      "company": "Vast",
-      "companyDomain": "vastspace.com",
-      "location": "Long Beach, California, United States",
-      "remoteType": "onsite",
-      "salaryMin": 72800,
-      "salaryMax": 83200,
-      "aiRoleKind": "non_ai",
-      "postedAt": "2026-06-25T20:48:29.000Z",
-      "firstIndexedAt": "2026-06-26T06:04:48.795Z",
-      "url": "https://www.dreamworkhq.com/job/f74fc181-9b16-48c0-bd52-3f6957c1a209?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     }
   ]
 }
