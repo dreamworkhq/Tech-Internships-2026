@@ -1,0 +1,50 @@
+{
+  "repo": "Tech-Internships-2026",
+  "owner": "ponder-surveys",
+  "title": "Tech Internships 2026 — updated daily",
+  "emoji": "💼",
+  "tagline": "Software engineering, data science, security, product, and design internships across the United States — refreshed every day from Dreamwork's live crawl of 400,000+ company career pages.",
+  "description": "💼 2026–2027 tech internships in the US, updated daily — software engineering, data science, product & design intern roles with salaries.",
+  "homepage": "https://www.dreamworkhq.com/?utm_source=github&utm_medium=repo_homepage&utm_campaign=gh-tech-internships-2026",
+  "topics": ["internships", "internship", "jobs", "job-search", "software-engineering", "summer-internship", "jobboard", "careers", "tech-jobs", "university", "students", "computer-science", "hiring", "internships-2026", "swe-internships"],
+  "utmCampaign": "gh-tech-internships-2026",
+  "keywords": "tech internships (software engineering, data science, security, product, design) in the United States",
+  "sources": [
+    { "seniority": "INTERN", "function": "Engineering", "country": "US" },
+    { "seniority": "INTERN", "function": "Data Science", "country": "US" },
+    { "seniority": "INTERN", "function": "Security", "country": "US" },
+    { "seniority": "INTERN", "function": "Product", "country": "US" },
+    { "seniority": "INTERN", "function": "Design", "country": "US" }
+  ],
+  "usOnly": true,
+  "titleInclude": "\\b(intern|internship|co-?op)\\b",
+  "titleExclude": "senior|staff|principal|director|\\bvp\\b|international\\b",
+  "maxRows": 100,
+  "jsonRows": 250,
+  "minRows": 20,
+  "maxPagesPerSource": 40,
+  "showAiColumn": false,
+  "siblings": [
+    { "repo": "ponder-surveys/New-Grad-Software-Engineer-Jobs", "label": "New Grad Software Engineer Jobs — entry-level roles for graduates" },
+    { "repo": "ponder-surveys/Remote-Tech-Jobs", "label": "Remote Tech Jobs — work-from-anywhere engineering roles" },
+    { "repo": "ponder-surveys/AI-ML-Jobs", "label": "AI & ML Jobs — AI-first roles, classified daily" }
+  ],
+  "faq": [
+    {
+      "q": "How often is this list updated?",
+      "a": "Every day. A GitHub Action pulls the freshest internship postings from Dreamwork's public API, which crawls 400,000+ live listings directly from company career pages (Greenhouse, Lever, Ashby, Workday, and more). Use <kbd>Ctrl</kbd>+<kbd>F</kbd> for software engineering, data science, ML, product, or design internships."
+    },
+    {
+      "q": "Which season are these internships for?",
+      "a": "Whatever companies are hiring for right now — as of mid-2026 that's mostly Fall 2026, Spring 2027, and early Summer 2027 openings. Because the list refreshes daily, new season postings show up here the day we first see them."
+    },
+    {
+      "q": "Graduating soon? ",
+      "a": "Check the companion list: <a href=\"https://github.com/ponder-surveys/New-Grad-Software-Engineer-Jobs\">New Grad Software Engineer Jobs</a> — same daily refresh, entry-level full-time roles."
+    },
+    {
+      "q": "Can a tool just apply to these for me?",
+      "a": "That's what <a href=\"https://www.dreamworkhq.com/?utm_source=github&utm_medium=faq&utm_campaign=gh-tech-internships-2026\">Dreamwork</a> does — it matches your résumé against every listing here, tailors your application, and can apply autonomously. The free tier shows all your matches."
+    }
+  ]
+}
