@@ -59,7 +59,7 @@ async function fetchJson(url, attempt = 1) {
 async function fetchSource(source, config) {
   const collected = [];
   const maxPages = config.maxPagesPerSource ?? 40;
-  const wanted = (config.jsonRows ?? 250) + 50;
+  const wanted = (config.maxRows ?? 300) + 100;
   for (let page = 0; page < maxPages; page++) {
     const params = new URLSearchParams({ limit: String(PAGE_SIZE), offset: String(page * PAGE_SIZE) });
     for (const [k, v] of Object.entries(source)) {
@@ -169,7 +169,7 @@ function formatSalary(row) {
 function formatLocation(row) {
   let loc = esc(row.location ?? "");
   if (/^(anywhere|remote)$/i.test(loc)) loc = "";
-  if (row.remoteType === "remote") return loc ? `Remote – ${truncate(loc, 40)}` : "Remote";
+  if (row.remoteType === "remote") return loc ? `Remote (${truncate(loc, 40)})` : "Remote";
   loc = truncate(loc || "—", 44);
   if (row.remoteType === "hybrid") return `${loc} (Hybrid)`;
   return loc;
@@ -184,14 +184,14 @@ function formatAge(row, now) {
 }
 
 const AI_KIND_LABELS = {
-  ai_first: "🧠 AI-first",
-  ai_explicit: "🤖 AI-focused",
-  ai_enabled: "✨ AI-enabled",
+  ai_first: "AI-first",
+  ai_explicit: "AI-focused",
+  ai_enabled: "AI-enabled",
 };
 
 function renderTable(rows, config, now) {
   const showAi = Boolean(config.showAiColumn);
-  const header = ["Company", "Role", "Location", ...(showAi ? ["AI Focus"] : []), "Salary", "Age", "Apply"];
+  const header = ["Company", "Role", "Location", ...(showAi ? ["AI focus"] : []), "Salary", "Age", "Apply"];
   const lines = [
     `| ${header.join(" | ")} |`,
     `|${header.map(() => " --- |").join("")}`,
@@ -209,17 +209,62 @@ function renderTable(rows, config, now) {
       ...(showAi ? [AI_KIND_LABELS[row.aiRoleKind] ?? ""] : []),
       formatSalary(row),
       formatAge(row, now),
-      `[Apply ↗](${jobUrl(row, config, "apply")})`,
+      `[Apply](${jobUrl(row, config, "apply")})`,
     ];
     lines.push(`| ${cells.join(" | ")} |`);
   }
   return lines.join("\n");
 }
 
+// GitHub's anchor algorithm: lowercase, drop punctuation, spaces to hyphens.
+function anchorSlug(text) {
+  return text.toLowerCase().replace(/[^a-z0-9 -]/g, "").trim().replace(/ +/g, "-");
+}
+
+/**
+ * Group rows into sections by functionPrimary (count-descending, tiny
+ * groups pooled into "Other"), Simplify-style, so a 300-row list stays
+ * browsable. Returns { toc, body }.
+ */
+function renderSections(rows, config, now) {
+  if (!config.groupBy) {
+    return { toc: "", body: renderTable(rows, config, now) };
+  }
+  const groups = new Map();
+  for (const row of rows) {
+    const key = row.functionPrimary || "Other";
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(row);
+  }
+  const named = [...groups.entries()].filter(([k, v]) => k !== "Other" && v.length >= 5);
+  named.sort((a, b) => b[1].length - a[1].length);
+  const leftovers = [...groups.entries()]
+    .filter(([k, v]) => k === "Other" || v.length < 5)
+    .flatMap(([, v]) => v)
+    .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+  const sections = [...named];
+  if (leftovers.length > 0) sections.push(["Other", leftovers]);
+
+  const toc = sections
+    .map(([name, list]) => {
+      const title = `${name} (${list.length})`;
+      return `- [${name}](#${anchorSlug(title)}) · ${list.length} roles`;
+    })
+    .join("\n");
+  const body = sections
+    .map(([name, list]) => `### ${name} (${list.length})\n\n${renderTable(list, config, now)}`)
+    .join("\n\n");
+  return { toc: `${toc}\n`, body };
+}
+
 function renderReadme(rows, config, now) {
   const updated = now.toISOString().slice(0, 10);
   const matchesUrl = `${SITE_BASE}/?utm_source=github&utm_medium=readme_cta&utm_campaign=${config.utmCampaign}`;
-  const table = renderTable(rows.slice(0, config.maxRows ?? 100), config, now);
+  const { toc, body } = renderSections(rows, config, now);
+  const windowDays = config.windowDays ?? 7;
+  const freshness = config.usedWindow
+    ? `every role was first indexed in the past ${windowDays} days`
+    : `these are the most recently indexed roles`;
 
   const siblings = (config.siblings ?? [])
     .map((s) => `- [${s.label}](https://github.com/${s.repo})`)
@@ -229,46 +274,36 @@ function renderReadme(rows, config, now) {
     .map((f) => `<details>\n<summary><strong>${f.q}</strong></summary>\n\n${f.a}\n\n</details>`)
     .join("\n\n");
 
-  return `# ${config.emoji} ${config.title}
+  return `# ${config.title}
 
 ${config.tagline}
 
-**⭐ Star this repo to get daily updates** — the list is refreshed every day by a GitHub Action pulling from [Dreamwork](${matchesUrl})'s live index of **400,000+ jobs**.
+Star this repo and new roles land in your GitHub feed every day. Listings come from [Dreamwork](${matchesUrl}), which crawls 400,000+ jobs directly from company career pages.
 
-> 🎯 **Tired of scrolling job lists?** [Dreamwork](${matchesUrl}) reads your résumé, matches you against every job in this list (and ~400K more), and can even apply for you. **[See your matches →](${matchesUrl})**
+Last updated: **${updated}**. ${rows.length} open roles listed; ${freshness}. Salary shows when the posting discloses it.
 
-_Last updated: **${updated}** · **${Math.min(rows.length, config.maxRows ?? 100)}** freshest roles listed · new roles added daily_
-
-${config.legend ? `${config.legend}\n` : ""}
+${config.legend ? `${config.legend}\n` : ""}${toc ? `\n${toc}` : ""}
 <!-- TABLE_START (auto-generated: do not edit by hand; edits are overwritten daily) -->
 
-${table}
+${body}
 
 <!-- TABLE_END -->
 
-*This table shows the freshest roles only. Want the full, filterable list with salary data and one-click apply? **[Browse it on Dreamwork →](${matchesUrl})***
+Rather not scan a table? [Dreamwork](${matchesUrl}) matches your resume against every role in this list and can apply for you. The free tier shows all your matches.
 
-## 🔍 More daily-updated job lists
+## More daily lists
 
 ${siblings}
-- [Dreamwork Research — live hiring data](${SITE_BASE}/research?utm_source=github&utm_medium=readme_links&utm_campaign=${config.utmCampaign})
+- [Dreamwork Research, live hiring data](${SITE_BASE}/research?utm_source=github&utm_medium=readme_links&utm_campaign=${config.utmCampaign})
 - [AI Labor Index](${SITE_BASE}/research/ai?utm_source=github&utm_medium=readme_links&utm_campaign=${config.utmCampaign})
 
-## ❓ FAQ
+## FAQ
 
 ${faq}
 
-## 🛠 How this list is built
+## How this list is built
 
-This repo is updated automatically every day by [a GitHub Action](.github/workflows/update.yml) that queries Dreamwork's public listings API, filters for ${config.keywords}, and rewrites this README. The raw data snapshot lives in [\`data/listings.json\`](data/listings.json). Found a problem with a listing? [Open an issue](../../issues).
-
-Data source: [Dreamwork](${matchesUrl}) — the autonomous job-application agent. Job listings are crawled directly from company career pages and ATS boards (Greenhouse, Lever, Ashby, Workday, and more), deduplicated, and classified.
-
----
-
-<p align="center">
-  <a href="${matchesUrl}"><strong>✨ Stop searching. Start matching. Try Dreamwork free →</strong></a>
-</p>
+A [GitHub Action](.github/workflows/update.yml) runs once a day. It queries Dreamwork's public listings API, filters for ${config.keywords}, removes duplicates, and rewrites this README. The raw snapshot lives in [\`data/listings.json\`](data/listings.json). Listings are crawled directly from company career pages and ATS boards (Greenhouse, Lever, Ashby, Workday, and others), so links go to real, currently open postings. Found a bad listing? [Open an issue](../../issues).
 `;
 }
 
@@ -318,7 +353,18 @@ for (const source of config.sources) {
 }
 config.totalMatching = totalMatching;
 
-const rows = dedupe(all).slice(0, config.jsonRows ?? 250);
+// Display set: everything first indexed inside the rolling window (capped),
+// falling back to the freshest N when the window is too thin to look alive.
+const deduped = dedupe(all);
+const windowDays = config.windowDays ?? 7;
+const cutoff = now.getTime() - windowDays * 86400000;
+const inWindow = deduped.filter((r) => new Date(r.createdAt).getTime() >= cutoff);
+const minWindowRows = config.minWindowRows ?? 100;
+config.usedWindow = inWindow.length >= minWindowRows;
+const rows = config.usedWindow
+  ? inWindow.slice(0, config.maxRows ?? 300)
+  : deduped.slice(0, minWindowRows);
+
 if (rows.length < (config.minRows ?? 10)) {
   throw new Error(
     `Only ${rows.length} rows after filtering; refusing to overwrite the list (minRows=${config.minRows ?? 10}).`,
@@ -329,5 +375,5 @@ mkdirSync(join(out, "data"), { recursive: true });
 writeFileSync(join(out, "README.md"), renderReadme(rows, config, now));
 writeFileSync(join(out, "data", "listings.json"), renderJson(rows, config, now));
 console.log(
-  `${config.repo}: wrote ${Math.min(rows.length, config.maxRows ?? 100)} README rows, ${rows.length} JSON rows (of ${totalMatching} matching) to ${out}`,
+  `${config.repo}: wrote ${rows.length} rows (window=${config.usedWindow}, ${totalMatching} matching upstream) to ${out}`,
 );
