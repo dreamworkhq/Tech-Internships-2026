@@ -283,8 +283,8 @@ function renderReadme(rows, config, now) {
   const shieldUpdated = `https://img.shields.io/github/last-commit/${repoFull}?label=updated&color=3B82F6&labelColor=131318&style=flat-square`;
   const linkRow = [
     `<a href="${SITE_BASE}/?utm_source=github&utm_medium=link_row&utm_campaign=${config.utmCampaign}">dreamworkhq.com</a>`,
+    `<a href="${SITE_BASE}/blog?utm_source=github&utm_medium=link_row&utm_campaign=${config.utmCampaign}">Blog</a>`,
     `<a href="${SITE_BASE}/research?utm_source=github&utm_medium=link_row&utm_campaign=${config.utmCampaign}">Hiring research</a>`,
-    `<a href="${SITE_BASE}/research/ai?utm_source=github&utm_medium=link_row&utm_campaign=${config.utmCampaign}">AI Labor Index</a>`,
     `<a href="../../issues">Report a listing</a>`,
   ].join("\n  ·\n  ");
 
@@ -324,7 +324,7 @@ Rather not scan a table? [Dreamwork](${matchesUrl}) matches your resume against 
 
 ${siblings}
 - [Dreamwork Research, live hiring data](${SITE_BASE}/research?utm_source=github&utm_medium=readme_links&utm_campaign=${config.utmCampaign})
-- [AI Labor Index](${SITE_BASE}/research/ai?utm_source=github&utm_medium=readme_links&utm_campaign=${config.utmCampaign})
+- [How to use Dreamwork, guides and tutorials](${SITE_BASE}/how-to?utm_source=github&utm_medium=readme_links&utm_campaign=${config.utmCampaign})
 
 ## FAQ
 
