@@ -59,7 +59,10 @@ async function fetchJson(url, attempt = 1) {
 async function fetchSource(source, config) {
   const collected = [];
   const maxPages = config.maxPagesPerSource ?? 40;
-  const wanted = (config.maxRows ?? 300) + 100;
+  // Inventory lists must exhaust the source; fresh lists stop once the
+  // display cap (plus dedupe headroom) is covered.
+  const wanted =
+    config.mode === "inventory" ? Infinity : (config.maxRows ?? 600) + 150;
   for (let page = 0; page < maxPages; page++) {
     const params = new URLSearchParams({ limit: String(PAGE_SIZE), offset: String(page * PAGE_SIZE) });
     for (const [k, v] of Object.entries(source)) {
@@ -76,11 +79,12 @@ async function fetchSource(source, config) {
   return collected;
 }
 
+// US/non-US partitioning happens after fetch (international rows feed
+// INTERNATIONAL.md), so keepRow only applies the audience filters.
 function keepRow(row, config) {
   if (!row?.id || !row.title || !row.companyName) return false;
   if (config.titleInclude && !new RegExp(config.titleInclude, "i").test(row.title)) return false;
   if (config.titleExclude && new RegExp(config.titleExclude, "i").test(row.title)) return false;
-  if (config.usOnly && !looksUnitedStates(row)) return false;
   if (config.aiKinds && !config.aiKinds.includes(row.aiRoleKind)) return false;
   return true;
 }
@@ -92,6 +96,19 @@ const NON_US_LOCATION = new RegExp(
     [
       "canada|india|united kingdom|\\buk\\b|ireland|germany|france|netherlands|belgium|spain|portugal|italy|austria|switzerland|poland|romania|czech|slovakia|hungary|ukraine|sweden|norway|denmark|finland|estonia|latvia|lithuania|greece|turkey|israel|egypt|nigeria|kenya|south africa|uae|dubai|saudi|qatar|japan|china|taiwan|korea|vietnam|philippines|indonesia|malaysia|thailand|singapore|australia|new zealand|brazil|argentina|chile|colombia|peru|mexico|costa rica|guatemala",
       "london|toronto|vancouver|montreal|ottawa|calgary|edmonton|winnipeg|mississauga|quebec|mumbai|chennai|bengaluru|bangalore|hyderabad|pune|delhi|noida|gurgaon|gurugram|kolkata|ahmedabad|dublin|berlin|munich|paris|amsterdam|warsaw|krakow|madrid|barcelona|lisbon|milan|rome|vienna|prague|budapest|bucharest|zurich|geneva|stockholm|copenhagen|oslo|helsinki|athens|istanbul|tel aviv|cairo|lagos|nairobi|johannesburg|cape town|riyadh|doha|tokyo|osaka|shanghai|beijing|shenzhen|seoul|taipei|hong kong|jakarta|kuala lumpur|bangkok|manila|ho chi minh|hanoi|sydney|melbourne|brisbane|perth|auckland|wellington|s[ãa]o paulo|buenos aires|santiago|bogot[áa]|lima|mexico city|guadalajara|monterrey",
+    ].join("|") +
+    ")\\b",
+  "i",
+);
+
+// Unambiguous US markers for locations that carry no state code, e.g. a bare
+// "Austin" or "Round Rock, Texas". Deliberately omits names that collide with
+// non-US places (Cambridge, Birmingham, Durham, Aurora, Alexandria, Georgia).
+const US_LOCATION = new RegExp(
+  "\\b(" +
+    [
+      "alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|new mexico|new york|north carolina|north dakota|ohio|oklahoma|oregon|pennsylvania|rhode island|south carolina|south dakota|tennessee|texas|utah|vermont|virginia|wisconsin|wyoming",
+      "nyc|brooklyn|manhattan|san francisco|los angeles|san jose|san diego|palo alto|mountain view|menlo park|sunnyvale|cupertino|santa clara|redwood city|berkeley|oakland|fremont|irvine|pasadena|burbank|el segundo|sacramento|seattle|bellevue|redmond|tacoma|spokane|portland|eugene|boise|austin|dallas|houston|fort worth|plano|frisco|san antonio|el paso|phoenix|scottsdale|tempe|chandler|tucson|las vegas|reno|salt lake city|denver|boulder|colorado springs|fort collins|chicago|milwaukee|madison|minneapolis|detroit|ann arbor|indianapolis|columbus|cleveland|cincinnati|pittsburgh|philadelphia|baltimore|bethesda|rockville|reston|mclean|arlington|washington,? d\\.?c|boston|stamford|hartford|new haven|providence|hoboken|jersey city|buffalo|rochester|syracuse|albany|atlanta|charlotte|raleigh|chapel hill|greensboro|nashville|memphis|knoxville|chattanooga|huntsville|louisville|lexington|new orleans|baton rouge|jacksonville|orlando|tampa|miami|fort lauderdale|boca raton|st\\.? louis|kansas city|omaha|des moines|oklahoma city|tulsa|wichita|albuquerque|anchorage|honolulu",
     ].join("|") +
     ")\\b",
   "i",
@@ -111,6 +128,7 @@ function looksUnitedStates(row) {
   if (/\b(united states|usa|u\.s\.)\b/i.test(loc)) return true;
   if (NON_US_LOCATION.test(loc)) return false;
   if (/\bUS\b/.test(loc)) return true;
+  if (US_LOCATION.test(loc)) return true;
   const suffix = loc.match(/,\s*([A-Z]{2})\s*(?:,|$|\()/);
   if (suffix && US_STATES.has(suffix[1])) return true;
   const prefix = loc.match(/^([A-Z]{2})\s*[-–]/);
@@ -146,19 +164,15 @@ function truncate(text, max) {
   return text.length > max ? `${text.slice(0, max - 1)}…` : text;
 }
 
-function jobUrl(row, config, content) {
-  const params = new URLSearchParams({
-    utm_source: "github",
-    utm_medium: "job_list",
-    utm_campaign: config.utmCampaign,
-  });
-  if (content) params.set("utm_content", content);
-  return `${SITE_BASE}/job/${row.id}?${params}`;
+// Row links carry only source+campaign: at inventory scale (~900 rows) every
+// utm byte counts against GitHub's ~500 KiB markdown render cutoff.
+function jobUrl(row, config) {
+  return `${SITE_BASE}/job/${row.id}?utm_source=github&utm_campaign=${config.utmCampaign}`;
 }
 
 function companyUrl(row, config) {
   if (!row.companyDomain) return null;
-  return `${SITE_BASE}/c/${row.companyDomain}?utm_source=github&utm_medium=company&utm_campaign=${config.utmCampaign}`;
+  return `${SITE_BASE}/c/${row.companyDomain}?utm_source=github&utm_campaign=${config.utmCampaign}`;
 }
 
 function formatSalary(row) {
@@ -193,9 +207,12 @@ const AI_KIND_LABELS = {
   ai_enabled: "AI-enabled",
 };
 
+// No separate Apply column: the role link opens the Dreamwork job page,
+// which is the apply path, and the duplicate URL per row would push
+// inventory-size lists past GitHub's markdown render cutoff.
 function renderTable(rows, config, now) {
   const showAi = Boolean(config.showAiColumn);
-  const header = ["Company", "Role", "Location", ...(showAi ? ["AI focus"] : []), "Salary", "Age", "Apply"];
+  const header = ["Company", "Role", "Location", ...(showAi ? ["AI focus"] : []), "Salary", "Age"];
   const lines = [
     `| ${header.join(" | ")} |`,
     `|${header.map(() => " --- |").join("")}`,
@@ -205,7 +222,7 @@ function renderTable(rows, config, now) {
     const company = cUrl
       ? `**[${truncate(esc(row.companyName), 32)}](${cUrl})**`
       : `**${truncate(esc(row.companyName), 32)}**`;
-    const role = `[${truncate(esc(row.title), 72)}](${jobUrl(row, config, "title")})`;
+    const role = `[${truncate(esc(row.title), 72)}](${jobUrl(row, config)})`;
     const cells = [
       company,
       role,
@@ -213,7 +230,6 @@ function renderTable(rows, config, now) {
       ...(showAi ? [AI_KIND_LABELS[row.aiRoleKind] ?? ""] : []),
       formatSalary(row),
       formatAge(row, now),
-      `[Apply](${jobUrl(row, config, "apply")})`,
     ];
     lines.push(`| ${cells.join(" | ")} |`);
   }
@@ -265,10 +281,17 @@ function renderReadme(rows, config, now) {
   const updated = now.toISOString().slice(0, 10);
   const matchesUrl = `${SITE_BASE}/?utm_source=github&utm_medium=readme_cta&utm_campaign=${config.utmCampaign}`;
   const { toc, body } = renderSections(rows, config, now);
-  const windowDays = config.windowDays ?? 7;
-  const freshness = config.usedWindow
-    ? `every role was first indexed in the past ${windowDays} days`
-    : `these are the most recently indexed roles`;
+  const inventoryScope =
+    rows.length >= (config.usOpenTotal ?? rows.length)
+      ? `All **${rows.length}** currently open roles are listed.`
+      : `The **${rows.length}** newest of **${config.usOpenTotal}** currently open roles are listed (GitHub caps how much of a page it renders).`;
+  const statsLine =
+    config.mode === "inventory"
+      ? `Last updated: **${updated}**. ${inventoryScope} The crawler rechecks every listing daily, so closed roles drop off automatically. Salary shows when the posting discloses it. Click a role to see details and apply.`
+      : `Last updated: **${updated}**. Showing the **${rows.length}** most recently indexed roles, curated from **${(config.totalMatching ?? 0).toLocaleString("en-US")}** open listings on Dreamwork. Salary shows when the posting discloses it. Click a role to see details and apply.`;
+  const intlLine = config.intlCount
+    ? `\nHiring outside the US? **${config.intlCount}** international roles are listed separately in [INTERNATIONAL.md](INTERNATIONAL.md).\n`
+    : "";
 
   const siblings = (config.siblings ?? [])
     .map((s) => `- [${s.label}](https://github.com/${s.repo})`)
@@ -309,8 +332,8 @@ function renderReadme(rows, config, now) {
 
 Star this repo and new roles land in your GitHub feed every day. Listings come from [Dreamwork](${matchesUrl}), which crawls 400,000+ jobs directly from company career pages.
 
-Last updated: **${updated}**. ${rows.length} open roles listed; ${freshness}. Salary shows when the posting discloses it.
-
+${statsLine}
+${intlLine}
 ${config.legend ? `${config.legend}\n` : ""}${toc ? `\n${toc}` : ""}
 <!-- TABLE_START (auto-generated: do not edit by hand; edits are overwritten daily) -->
 
@@ -336,6 +359,40 @@ A [GitHub Action](.github/workflows/update.yml) runs once a day. It queries Drea
 `;
 }
 
+function renderIntl(rows, config, now) {
+  const updated = now.toISOString().slice(0, 10);
+  const matchesUrl = `${SITE_BASE}/?utm_source=github&utm_medium=intl_readme&utm_campaign=${config.utmCampaign}`;
+  const { toc, body } = renderSections(rows, config, now);
+  return `# ${config.title}: international
+
+Roles outside the United States, from the same daily crawl as [the US list](README.md). Locations are shown per row; grouping by country will come once the public API exposes country codes.
+
+Last updated: **${updated}**. **${rows.length}** currently open international roles. Click a role to see details and apply, or let [Dreamwork](${matchesUrl}) match them to your resume.
+
+${toc ? `${toc}\n` : ""}<!-- TABLE_START (auto-generated: do not edit by hand; edits are overwritten daily) -->
+
+${body}
+
+<!-- TABLE_END -->
+`;
+}
+
+/**
+ * GitHub stops rendering markdown files around 500 KiB; trim rows until the
+ * rendered document fits with margin, so a growing corpus degrades to
+ * "newest N" instead of an unrendered wall of text.
+ */
+const RENDER_LIMIT_BYTES = 460000;
+function fitToRenderLimit(rows, render) {
+  let n = rows.length;
+  let text = render(rows);
+  while (Buffer.byteLength(text) > RENDER_LIMIT_BYTES && n > 50) {
+    n = Math.floor(n * 0.9);
+    text = render(rows.slice(0, n));
+  }
+  return { text, kept: n };
+}
+
 function renderJson(rows, config, now) {
   return `${JSON.stringify(
     {
@@ -355,7 +412,7 @@ function renderJson(rows, config, now) {
         aiRoleKind: row.aiRoleKind ?? null,
         postedAt: row.postedAt ?? null,
         firstIndexedAt: row.createdAt,
-        url: jobUrl(row, config, "json"),
+        url: jobUrl(row, config),
       })),
     },
     null,
@@ -382,27 +439,40 @@ for (const source of config.sources) {
 }
 config.totalMatching = totalMatching;
 
-// Display set: everything first indexed inside the rolling window (capped),
-// falling back to the freshest N when the window is too thin to look alive.
+// Partition and pick the display set.
+// inventory mode: every verified-open matching role (US in README,
+// the rest in INTERNATIONAL.md). fresh mode: the newest maxRows.
 const deduped = dedupe(all);
-const windowDays = config.windowDays ?? 7;
-const cutoff = now.getTime() - windowDays * 86400000;
-const inWindow = deduped.filter((r) => new Date(r.createdAt).getTime() >= cutoff);
-const minWindowRows = config.minWindowRows ?? 100;
-config.usedWindow = inWindow.length >= minWindowRows;
-const rows = config.usedWindow
-  ? inWindow.slice(0, config.maxRows ?? 300)
-  : deduped.slice(0, minWindowRows);
+const usRows = deduped.filter((r) => looksUnitedStates(r));
+const intlRows = deduped.filter((r) => !looksUnitedStates(r));
+let readmeRows = config.usOnly ? usRows : deduped;
+if (config.mode !== "inventory") {
+  readmeRows = readmeRows.slice(0, config.maxRows ?? 600);
+}
 
-if (rows.length < (config.minRows ?? 10)) {
+config.usOpenTotal = readmeRows.length;
+
+if (readmeRows.length < (config.minRows ?? 10)) {
   throw new Error(
-    `Only ${rows.length} rows after filtering; refusing to overwrite the list (minRows=${config.minRows ?? 10}).`,
+    `Only ${readmeRows.length} rows after filtering; refusing to overwrite the list (minRows=${config.minRows ?? 10}).`,
   );
 }
 
 mkdirSync(join(out, "data"), { recursive: true });
-writeFileSync(join(out, "README.md"), renderReadme(rows, config, now));
-writeFileSync(join(out, "data", "listings.json"), renderJson(rows, config, now));
+
+let intlKept = 0;
+if (config.international && intlRows.length >= 25) {
+  const intl = fitToRenderLimit(intlRows, (r) => renderIntl(r, config, now));
+  writeFileSync(join(out, "INTERNATIONAL.md"), intl.text);
+  intlKept = intl.kept;
+}
+config.intlCount = intlKept;
+
+const readme = fitToRenderLimit(readmeRows, (r) => renderReadme(r, config, now));
+writeFileSync(join(out, "README.md"), readme.text);
+
+const jsonRows = (config.usOnly ? usRows.concat(intlRows.slice(0, intlKept)) : readmeRows).slice(0, 1500);
+writeFileSync(join(out, "data", "listings.json"), renderJson(jsonRows, config, now));
 console.log(
-  `${config.repo}: wrote ${rows.length} rows (window=${config.usedWindow}, ${totalMatching} matching upstream) to ${out}`,
+  `${config.repo}: README ${readme.kept} rows (${config.mode ?? "fresh"}), intl ${intlKept}, json ${jsonRows.length}, ${totalMatching} matching upstream -> ${out}`,
 );

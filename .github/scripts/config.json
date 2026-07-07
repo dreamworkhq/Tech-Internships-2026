@@ -54,11 +54,9 @@
   "usOnly": true,
   "titleInclude": "\\b(intern|internship|co-?op)\\b",
   "titleExclude": "senior|staff|principal|director|\\bvp\\b|international\\b",
-  "windowDays": 7,
   "maxRows": 300,
-  "minWindowRows": 100,
   "minRows": 20,
-  "maxPagesPerSource": 60,
+  "maxPagesPerSource": 140,
   "groupBy": "functionPrimary",
   "showAiColumn": false,
   "siblings": [
@@ -92,5 +90,7 @@
       "q": "Can a tool apply to these for me?",
       "a": "Yes. <a href=\"https://www.dreamworkhq.com/?utm_source=github&utm_medium=faq&utm_campaign=gh-tech-internships-2026\">Dreamwork</a> matches your resume against every listing here, tailors each application, and can submit them for you. Seeing your matches is free."
     }
-  ]
+  ],
+  "mode": "inventory",
+  "international": true
 }
