@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T15:46:53.726Z",
+  "generatedAt": "2026-07-07T15:48:37.117Z",
   "source": "https://www.dreamworkhq.com",
   "list": "Tech-Internships-2026",
   "count": 100,
@@ -1125,7 +1125,7 @@
       "url": "https://www.dreamworkhq.com/job/55550d3a-8da8-4dfc-a16a-6475d7829bfb?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
-      "id": "7d17ae89-60cd-4709-9c9a-e9e10ee3e165",
+      "id": "2cea799e-e651-4668-afca-c287b5ad6ff5",
       "title": "Test & Validation Engineering Yearlong Intern",
       "company": "Aumovio",
       "companyDomain": "aumovio.com",
@@ -1134,9 +1134,9 @@
       "salaryMin": 40000,
       "salaryMax": 50000,
       "aiRoleKind": "non_ai",
-      "postedAt": "2026-06-30T17:34:51.445Z",
+      "postedAt": "2026-06-30T17:34:44.885Z",
       "firstIndexedAt": "2026-07-01T06:02:52.556Z",
-      "url": "https://www.dreamworkhq.com/job/7d17ae89-60cd-4709-9c9a-e9e10ee3e165?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+      "url": "https://www.dreamworkhq.com/job/2cea799e-e651-4668-afca-c287b5ad6ff5?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "c1048fe7-f884-4f77-85a8-40f8d3f9b177",
@@ -1223,32 +1223,46 @@
       "url": "https://www.dreamworkhq.com/job/f46a15d2-4d58-4a12-ab68-8c25a7ba3886?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
-      "id": "d9645ba3-3a15-4104-bc29-de5e4ec0ba32",
-      "title": "Software Engineer, Internship - Defense Tech",
+      "id": "4b23b4bb-59a3-4d82-86bc-b05140369fb7",
+      "title": "Software Engineer, Internship - Infrastructure",
       "company": "Palantir",
       "companyDomain": "palantir.com",
       "location": "Palo Alto, CA",
-      "remoteType": null,
+      "remoteType": "onsite",
       "salaryMin": 126000,
       "salaryMax": 126000,
-      "aiRoleKind": null,
-      "postedAt": "2024-08-05T23:26:42.003Z",
+      "aiRoleKind": "non_ai",
+      "postedAt": "2025-08-19T09:48:43.334Z",
       "firstIndexedAt": "2026-06-30T06:24:20.763Z",
-      "url": "https://www.dreamworkhq.com/job/d9645ba3-3a15-4104-bc29-de5e4ec0ba32?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+      "url": "https://www.dreamworkhq.com/job/4b23b4bb-59a3-4d82-86bc-b05140369fb7?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
-      "id": "907a24b4-5777-4188-b717-24eec49864a4",
-      "title": "Software Engineer, Internship",
+      "id": "16edcd85-81a0-4790-b133-2af09f3577e8",
+      "title": "Software Engineer, Internship - Production Infrastructure",
       "company": "Palantir",
       "companyDomain": "palantir.com",
-      "location": "Palo Alto, CA",
+      "location": "Seattle, WA",
       "remoteType": null,
       "salaryMin": 126000,
       "salaryMax": 126000,
       "aiRoleKind": null,
-      "postedAt": "2021-07-01T21:52:15.503Z",
+      "postedAt": "2025-06-26T20:05:13.023Z",
       "firstIndexedAt": "2026-06-30T06:24:20.763Z",
-      "url": "https://www.dreamworkhq.com/job/907a24b4-5777-4188-b717-24eec49864a4?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+      "url": "https://www.dreamworkhq.com/job/16edcd85-81a0-4790-b133-2af09f3577e8?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "2ecfe130-b575-4dec-8fec-daa9f663a763",
+      "title": "Software Engineer, Internship - Production Infrastructure",
+      "company": "Palantir",
+      "companyDomain": "palantir.com",
+      "location": "New York, NY",
+      "remoteType": null,
+      "salaryMin": 126000,
+      "salaryMax": 126000,
+      "aiRoleKind": null,
+      "postedAt": "2025-06-26T20:04:34.819Z",
+      "firstIndexedAt": "2026-06-30T06:24:20.763Z",
+      "url": "https://www.dreamworkhq.com/job/2ecfe130-b575-4dec-8fec-daa9f663a763?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "28b68a0b-8470-4cfd-a8dd-0e8683c3a3e1",
@@ -1279,6 +1293,34 @@
       "url": "https://www.dreamworkhq.com/job/1a74591e-21b2-469e-92de-6d6b90893bd0?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
+      "id": "907a24b4-5777-4188-b717-24eec49864a4",
+      "title": "Software Engineer, Internship",
+      "company": "Palantir",
+      "companyDomain": "palantir.com",
+      "location": "Palo Alto, CA",
+      "remoteType": null,
+      "salaryMin": 126000,
+      "salaryMax": 126000,
+      "aiRoleKind": null,
+      "postedAt": "2021-07-01T21:52:15.503Z",
+      "firstIndexedAt": "2026-06-30T06:24:20.763Z",
+      "url": "https://www.dreamworkhq.com/job/907a24b4-5777-4188-b717-24eec49864a4?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
+      "id": "d9645ba3-3a15-4104-bc29-de5e4ec0ba32",
+      "title": "Software Engineer, Internship - Defense Tech",
+      "company": "Palantir",
+      "companyDomain": "palantir.com",
+      "location": "Palo Alto, CA",
+      "remoteType": null,
+      "salaryMin": 126000,
+      "salaryMax": 126000,
+      "aiRoleKind": null,
+      "postedAt": "2024-08-05T23:26:42.003Z",
+      "firstIndexedAt": "2026-06-30T06:24:20.763Z",
+      "url": "https://www.dreamworkhq.com/job/d9645ba3-3a15-4104-bc29-de5e4ec0ba32?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+    },
+    {
       "id": "dc106703-9972-4545-8d37-38f1db45aab0",
       "title": "Software Engineer, Internship - Infrastructure",
       "company": "Palantir",
@@ -1293,8 +1335,8 @@
       "url": "https://www.dreamworkhq.com/job/dc106703-9972-4545-8d37-38f1db45aab0?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
-      "id": "2ecfe130-b575-4dec-8fec-daa9f663a763",
-      "title": "Software Engineer, Internship - Production Infrastructure",
+      "id": "c09e7bb1-3535-4465-a75a-8ca6ed33fc55",
+      "title": "Software Engineer, Internship - Defense Tech",
       "company": "Palantir",
       "companyDomain": "palantir.com",
       "location": "New York, NY",
@@ -1302,37 +1344,9 @@
       "salaryMin": 126000,
       "salaryMax": 126000,
       "aiRoleKind": null,
-      "postedAt": "2025-06-26T20:04:34.819Z",
+      "postedAt": "2024-08-05T23:27:08.111Z",
       "firstIndexedAt": "2026-06-30T06:24:20.763Z",
-      "url": "https://www.dreamworkhq.com/job/2ecfe130-b575-4dec-8fec-daa9f663a763?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "16edcd85-81a0-4790-b133-2af09f3577e8",
-      "title": "Software Engineer, Internship - Production Infrastructure",
-      "company": "Palantir",
-      "companyDomain": "palantir.com",
-      "location": "Seattle, WA",
-      "remoteType": null,
-      "salaryMin": 126000,
-      "salaryMax": 126000,
-      "aiRoleKind": null,
-      "postedAt": "2025-06-26T20:05:13.023Z",
-      "firstIndexedAt": "2026-06-30T06:24:20.763Z",
-      "url": "https://www.dreamworkhq.com/job/16edcd85-81a0-4790-b133-2af09f3577e8?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "4b23b4bb-59a3-4d82-86bc-b05140369fb7",
-      "title": "Software Engineer, Internship - Infrastructure",
-      "company": "Palantir",
-      "companyDomain": "palantir.com",
-      "location": "Palo Alto, CA",
-      "remoteType": "onsite",
-      "salaryMin": 126000,
-      "salaryMax": 126000,
-      "aiRoleKind": "non_ai",
-      "postedAt": "2025-08-19T09:48:43.334Z",
-      "firstIndexedAt": "2026-06-30T06:24:20.763Z",
-      "url": "https://www.dreamworkhq.com/job/4b23b4bb-59a3-4d82-86bc-b05140369fb7?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
+      "url": "https://www.dreamworkhq.com/job/c09e7bb1-3535-4465-a75a-8ca6ed33fc55?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     },
     {
       "id": "559bc4da-baa9-4077-8f08-56b26251219e",
@@ -1389,20 +1403,6 @@
       "postedAt": "2026-06-29T14:58:54.289Z",
       "firstIndexedAt": "2026-06-30T06:03:50.388Z",
       "url": "https://www.dreamworkhq.com/job/d41a0eaf-5aa6-46ce-b433-316f68b6cb05?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
-    },
-    {
-      "id": "5d5f662f-2133-491b-9748-db7c40fb3b12",
-      "title": "Flight Test Operations Pilot Intern - Fall 2026",
-      "company": "Hermeus",
-      "companyDomain": "hermeus.com",
-      "location": "Los Angeles, CA",
-      "remoteType": "onsite",
-      "salaryMin": 52000,
-      "salaryMax": 68640,
-      "aiRoleKind": "non_ai",
-      "postedAt": "2026-06-29T15:23:09.924Z",
-      "firstIndexedAt": "2026-06-30T06:03:49.934Z",
-      "url": "https://www.dreamworkhq.com/job/5d5f662f-2133-491b-9748-db7c40fb3b12?utm_source=github&utm_medium=job_list&utm_campaign=gh-tech-internships-2026&utm_content=json"
     }
   ]
 }
