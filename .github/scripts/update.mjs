@@ -83,6 +83,11 @@ async function fetchSource(source, config) {
 // INTERNATIONAL.md), so keepRow only applies the audience filters.
 function keepRow(row, config) {
   if (!row?.id || !row.title || !row.companyName) return false;
+  // Staffing-agency reposts hide the employer behind "Confidential Employer"
+  // or a machine-suffixed name like "Superloop 1733718881"; a public list
+  // full of those reads as spam, so drop them.
+  if (/\bconfidential\b/i.test(row.companyName)) return false;
+  if (/\b\d{9,}\b/.test(row.companyName)) return false;
   if (config.titleInclude && !new RegExp(config.titleInclude, "i").test(row.title)) return false;
   if (config.titleExclude && new RegExp(config.titleExclude, "i").test(row.title)) return false;
   if (config.aiKinds && !config.aiKinds.includes(row.aiRoleKind)) return false;
