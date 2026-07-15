@@ -316,8 +316,8 @@ function renderReadme(rows, config, now) {
     `<a href="../../issues">Report a listing</a>`,
   ].join("\n  ·\n  ");
 
-  const bannerAlt = "Dreamwork turns live job listings into personalized matches";
-  const ctaAlt = "Match my resume to these roles";
+  const bannerAlt = "Dreamwork puts your job search in Pro mode by ranking live roles for your resume";
+  const ctaAlt = "Match my resume";
 
   return `<a href="${matchesUrl}">
   <picture>
