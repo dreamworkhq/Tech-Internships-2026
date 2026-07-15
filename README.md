@@ -50,7 +50,7 @@ Last updated: **2026-07-15**. All **848** currently open roles are listed. The c
 
 ### Engineering (755)
 
-| Company | Role | Location | Salary | Age |
+| Company | Role | Location | Pay | Added |
 | --- | --- | --- | --- | --- |
 | **[Akunacapital](https://www.dreamworkhq.com/c/akunacapital.com?utm_source=github&utm_campaign=gh-tech-internships)** | [Software Engineer Intern - Full Stack Web, Summer 2027](https://www.dreamworkhq.com/job/d0a0ccb9-6770-4149-9d1c-4fc318cf0100?utm_source=github&utm_campaign=gh-tech-internships) | Chicago, IL | $145K | 0d |
 | **[Akunacapital](https://www.dreamworkhq.com/c/akunacapital.com?utm_source=github&utm_campaign=gh-tech-internships)** | [Software Engineer Intern - C# .NET Desktop, Summer 2027](https://www.dreamworkhq.com/job/2cba63a4-3cfe-46e4-8381-a6c59bc6f5d8?utm_source=github&utm_campaign=gh-tech-internships) | Chicago, IL | $145K | 0d |
@@ -810,7 +810,7 @@ Last updated: **2026-07-15**. All **848** currently open roles are listed. The c
 
 ### Data Science (38)
 
-| Company | Role | Location | Salary | Age |
+| Company | Role | Location | Pay | Added |
 | --- | --- | --- | --- | --- |
 | **[Mayo US](https://www.dreamworkhq.com/c/design.mayoclinic.org?utm_source=github&utm_campaign=gh-tech-internships)** | [Intern - Data Science AI-&I (Master's degree level)](https://www.dreamworkhq.com/job/0db12c9a-c6b5-401f-90a0-c8aa6f000642?utm_source=github&utm_campaign=gh-tech-internships) | Rochester, MN, United States | $49K | 1d |
 | **[Church](https://www.dreamworkhq.com/c/assets.ldscdn.org?utm_source=github&utm_campaign=gh-tech-internships)** | [Data Science Internship](https://www.dreamworkhq.com/job/638b3e29-075e-4339-9fa3-7038aafd611a?utm_source=github&utm_campaign=gh-tech-internships) | Salt Lake City, UT, United States (Hybrid) |  | 2d |
@@ -853,7 +853,7 @@ Last updated: **2026-07-15**. All **848** currently open roles are listed. The c
 
 ### Security (31)
 
-| Company | Role | Location | Salary | Age |
+| Company | Role | Location | Pay | Added |
 | --- | --- | --- | --- | --- |
 | **[DXC Technology](https://www.dreamworkhq.com/c/dxc.com?utm_source=github&utm_campaign=gh-tech-internships)** | [Cyber Security Intern](https://www.dreamworkhq.com/job/9f5d6f15-7c5b-4186-b5b6-591146c0341d?utm_source=github&utm_campaign=gh-tech-internships) | ITA - MI - MILAN (Hybrid) |  | 3d |
 | **[Georgia Tech Research Institute](https://www.dreamworkhq.com/c/gatech.edu?utm_source=github&utm_campaign=gh-tech-internships)** | [Embedded Systems Cyber Security Graduate Intern - Fall 2026- CIPHER](https://www.dreamworkhq.com/job/fcca9933-3174-44a8-bfbd-308a5ecad825?utm_source=github&utm_campaign=gh-tech-internships) | Atlanta, GA |  | 4d |
@@ -889,7 +889,7 @@ Last updated: **2026-07-15**. All **848** currently open roles are listed. The c
 
 ### Product (12)
 
-| Company | Role | Location | Salary | Age |
+| Company | Role | Location | Pay | Added |
 | --- | --- | --- | --- | --- |
 | **[Salesforce](https://www.dreamworkhq.com/c/salesforce.com?utm_source=github&utm_campaign=gh-tech-internships)** | [Summer 2027 Intern - Associate Product Manager (APM)](https://www.dreamworkhq.com/job/a916a93d-c227-497a-bfaf-2709e2f70258?utm_source=github&utm_campaign=gh-tech-internships) | California - San Francisco | $114K–$123K | 0d |
 | **[Univision](https://www.dreamworkhq.com/c/univision.com?utm_source=github&utm_campaign=gh-tech-internships)** | [Co-Op, Product Manager - Personalization & New Experiences-Temp](https://www.dreamworkhq.com/job/c4af1f4e-2fcd-4d6a-8777-0321df5f8277?utm_source=github&utm_campaign=gh-tech-internships) | Miami, FL |  | 5d |
@@ -906,7 +906,7 @@ Last updated: **2026-07-15**. All **848** currently open roles are listed. The c
 
 ### Design (12)
 
-| Company | Role | Location | Salary | Age |
+| Company | Role | Location | Pay | Added |
 | --- | --- | --- | --- | --- |
 | **[SAP](https://www.dreamworkhq.com/c/sap.com?utm_source=github&utm_campaign=gh-tech-internships)** | [SAP iXp Intern - Designer Intern (Global Value Advisory)](https://www.dreamworkhq.com/job/9c96550a-7471-40c9-8b62-6dc8c10740a8?utm_source=github&utm_campaign=gh-tech-internships) | North America, USA, Chicago (Hybrid) |  | 0d |
 | **[QRG](https://www.dreamworkhq.com/c/garnethill.com?utm_source=github&utm_campaign=gh-tech-internships)** | [Intern - Temp (Cinmar)](https://www.dreamworkhq.com/job/d9259406-eccc-431f-a8f2-a9eaa60d5877?utm_source=github&utm_campaign=gh-tech-internships) | USA, OH, West Chester (Hybrid) |  | 2d |

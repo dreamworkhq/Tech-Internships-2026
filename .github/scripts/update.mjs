@@ -219,7 +219,7 @@ const AI_KIND_LABELS = {
 // inventory-size lists past GitHub's markdown render cutoff.
 function renderTable(rows, config, now) {
   const showAi = Boolean(config.showAiColumn);
-  const header = ["Company", "Role", "Location", ...(showAi ? ["AI focus"] : []), "Salary", "Age"];
+  const header = ["Company", "Role", "Location", ...(showAi ? ["AI focus"] : []), "Pay", "Added"];
   const lines = [
     `| ${header.join(" | ")} |`,
     `|${header.map(() => " --- |").join("")}`,
