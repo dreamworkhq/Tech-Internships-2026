@@ -316,7 +316,11 @@ function renderReadme(rows, config, now) {
     `<a href="../../issues">Report a listing</a>`,
   ].join("\n  ·\n  ");
 
-  return `<a href="${matchesUrl}"><img src="./static/img/banner.svg" alt="Dreamwork. 400,000+ live jobs, crawled daily. Matched to your resume. Applied for you." width="100%"></a>
+  const bannerAlt = "Dreamwork turns live job listings into personalized matches";
+  const ctaAlt = "Match my resume to these roles";
+
+  return `<a href="${matchesUrl}"><img src="./static/img/banner-dark.svg#gh-dark-mode-only" alt="${bannerAlt}" width="100%"></a>
+<a href="${matchesUrl}"><img src="./static/img/banner-light.svg#gh-light-mode-only" alt="${bannerAlt}" width="100%"></a>
 
 <h1 align="center">${config.title}</h1>
 
@@ -328,7 +332,8 @@ function renderReadme(rows, config, now) {
 </p>
 
 <p align="center">
-  <a href="${matchesUrl}"><img src="./static/img/btn-matches.svg" width="200" alt="See your matches on Dreamwork"></a>
+  <a href="${matchesUrl}"><img src="./static/img/btn-matches-dark.svg#gh-dark-mode-only" width="340" alt="${ctaAlt}"></a>
+  <a href="${matchesUrl}"><img src="./static/img/btn-matches-light.svg#gh-light-mode-only" width="340" alt="${ctaAlt}"></a>
 </p>
 
 <p align="center">
@@ -448,6 +453,19 @@ config.totalMatching = totalMatching;
 // inventory mode: every verified-open matching role (US in README,
 // the rest in INTERNATIONAL.md). fresh mode: the newest maxRows.
 const deduped = dedupe(all);
+const minCoverageRatio = config.minUpstreamCoverageRatio;
+if (
+  config.mode === "inventory" &&
+  Number.isFinite(minCoverageRatio) &&
+  minCoverageRatio > 0 &&
+  minCoverageRatio <= 1 &&
+  totalMatching > 0 &&
+  deduped.length / totalMatching < minCoverageRatio
+) {
+  throw new Error(
+    `Upstream coverage collapsed: ${deduped.length} filtered unique rows from ${totalMatching} matching upstream (${(deduped.length / totalMatching * 100).toFixed(1)}%; minimum ${(minCoverageRatio * 100).toFixed(1)}%). Refusing to overwrite the list.`,
+  );
+}
 const usRows = deduped.filter((r) => looksUnitedStates(r));
 const intlRows = deduped.filter((r) => !looksUnitedStates(r));
 let readmeRows = config.usOnly ? usRows : deduped;

@@ -1,0 +1,36 @@
+<svg width="900" height="280" viewBox="0 0 900 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dreamwork turns live job listings into personalized matches">
+  <defs>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0891B2"/>
+      <stop offset="0.48" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="wash" x1="566" y1="53" x2="836" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#EDE9FE"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="898" height="278" rx="22" fill="#F8FAFD" stroke="#D6DCE7" stroke-width="2"/>
+  <rect x="42" y="38" width="206" height="8" rx="4" fill="url(#signal)"/>
+  <text x="42" y="80" fill="#5F6675" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="600" letter-spacing="2">DREAMWORK / LIVE JOB SIGNAL</text>
+  <text x="42" y="142" fill="#141622" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="46" font-weight="750" letter-spacing="-1.6">The jobs are here.</text>
+  <text x="42" y="190" fill="#141622" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="38" font-weight="520" letter-spacing="-1.2">Find the ones that fit.</text>
+  <text x="42" y="232" fill="#5F6675" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16">400,000+ live roles · refreshed daily · matched to your resume</text>
+
+  <rect x="578" y="48" width="270" height="184" rx="18" fill="url(#wash)" stroke="#CBD5E1"/>
+  <rect x="604" y="72" width="88" height="70" rx="12" fill="#FFFFFF" stroke="#2563EB"/>
+  <text x="620" y="96" fill="#4B6595" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="700" letter-spacing="1.2">YOUR RESUME</text>
+  <rect x="620" y="108" width="48" height="4" rx="2" fill="#94A3B8"/>
+  <rect x="620" y="119" width="33" height="4" rx="2" fill="#CBD5E1"/>
+  <path d="M699 107H730" stroke="url(#signal)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="707" cy="107" r="4" fill="#0891B2"/>
+  <circle cx="720" cy="107" r="4" fill="#2563EB"/>
+  <circle cx="733" cy="107" r="4" fill="#7C3AED"/>
+  <rect x="740" y="72" width="82" height="70" rx="12" fill="#141622"/>
+  <text x="752" y="94" fill="#AEB7C7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="700" letter-spacing="1">BEST FIT</text>
+  <text x="752" y="122" fill="#FFFFFF" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="800">94%</text>
+  <rect x="604" y="162" width="218" height="44" rx="10" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <circle cx="624" cy="184" r="6" fill="#7C3AED"/>
+  <text x="640" y="181" fill="#141622" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="650">Best-fit roles, ranked for you</text>
+  <text x="640" y="196" fill="#64748B" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10">Skills · goals · location · seniority</text>
+</svg>
