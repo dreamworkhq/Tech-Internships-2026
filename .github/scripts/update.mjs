@@ -187,6 +187,7 @@ function formatSalary(row) {
   if (!min || !max || min > max) return "";
   if (min >= 15 && max <= 300) return `$${min}–$${max}/hr`;
   if (min < 20000 || max > 900000) return ""; // currency-conversion junk in corpus
+  if (max > min * 6) return ""; // implausible spread (e.g. $65K–$800K) → parse artifact
   const k = (n) => `$${Math.round(n / 1000)}K`;
   return min === max ? k(min) : `${k(min)}–${k(max)}`;
 }
