@@ -4,7 +4,13 @@ on:
   schedule:
     # Daily, ~6:20am ET. Odd minute to avoid GitHub's on-the-hour cron congestion.
     - cron: "23 10 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      allow_snapshot_reset:
+        description: Replace an incompatible prior snapshot after auditing the new output
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -26,6 +32,8 @@ jobs:
 
       - name: Regenerate listings
         run: node .github/scripts/update.mjs .github/scripts/config.json --out .
+        env:
+          DREAMWORK_JOB_LIST_ALLOW_SNAPSHOT_RESET: ${{ inputs.allow_snapshot_reset && '1' || '0' }}
 
       - name: Commit and push if changed
         run: |
