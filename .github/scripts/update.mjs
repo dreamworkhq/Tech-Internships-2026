@@ -585,8 +585,12 @@ function assertPreviousSnapshotHealth(rows, previous, config) {
   const overlapRatio = overlap / previousIds.size;
   const minCountRatio =
     config.minPreviousCountRatio ?? DEFAULT_MIN_PREVIOUS_COUNT_RATIO;
+  // Inventory lists should retain most IDs between runs. A capped fresh feed
+  // intentionally rolls over as newly indexed jobs enter the newest window,
+  // so its durable safety signal is count retention rather than ID overlap.
   const minOverlapRatio =
-    config.minPreviousOverlapRatio ?? DEFAULT_MIN_PREVIOUS_OVERLAP_RATIO;
+    config.minPreviousOverlapRatio ??
+    (config.mode === "fresh" ? 0 : DEFAULT_MIN_PREVIOUS_OVERLAP_RATIO);
   if (countRatio < minCountRatio || overlapRatio < minOverlapRatio) {
     throw new Error(
       `Snapshot health check failed: ${rows.length} current rows vs ${previousIds.size} previous (${(countRatio * 100).toFixed(1)}% count retention), ${overlap} retained ids (${(overlapRatio * 100).toFixed(1)}% overlap). Minimums are ${(minCountRatio * 100).toFixed(1)}% count and ${(minOverlapRatio * 100).toFixed(1)}% overlap. Refusing to overwrite the list.`,
